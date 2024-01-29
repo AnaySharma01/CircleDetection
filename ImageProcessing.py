@@ -17,10 +17,10 @@ def processImage(image):
     circle_arr = np.uint16(np.round(circle))
 
     for point in circle_arr[0, :]:
-        #Displays the circle around the image
+        #Creates the circle around the image
         cv.circle(image, (point[0] + 5, point[1] - 14), point[2] + 15, (0, 255, 0), 5)
 
-        #Finds and displays the center point of the circle
+        #Finds the center point of the circle
         cv.circle(image, (point[0] + 5, point[1] - 14), 2, (0, 0, 255), 5)
 
 
